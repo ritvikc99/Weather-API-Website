@@ -1,0 +1,12 @@
+wheel
+
+# Web framework 
+flask
+
+# Python WSGI HTTP server (connects web servers such as nginx to app)
+gunicorn
+
+# Python requests library
+requests
+
+rsa
