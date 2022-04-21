@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Search by Zip Code</h2>
+    <form action="{{ url_for('search_zip') }}" method=post>
+	<p class="heading">Zip Code: <input type=text name=zip>
+	<p><input type=submit value=Search></p>
+    </form>
+{% endblock %}

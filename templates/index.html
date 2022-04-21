@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Welcome to a simple weather forecast app!</h2>
+
+    <h3>Search by City Name <a href="{{ url_for('search_city') }}">here</a></h3>
+    <h3>Search by Zip Code <a href="{{ url_for('search_zip') }}">here</a></h3>
+    
+{% endblock %}

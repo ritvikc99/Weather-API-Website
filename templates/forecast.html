@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}    
+    <h3>Forecast:</h3>
+    
+    <p class=forecast>
+	<p class="heading">Cloud Percentage: {{ data.cloud_pct }} <br>
+	<p class="heading">Temperature: {{ data.temp }} <br>
+	<p class="heading">Feels Like: {{ data.feels_like }} <br>
+	<p class="heading">Humidity: {{ data.humidity }} <br>
+	<p class="heading">Minimum Temp: {{ data.min_temp }} <br>
+	<p class="heading">Maximum Temp: {{ data.max_temp }} <br>
+	<p class="heading">Wind Speed: {{ data.wind_speed }} <br>
+	<p class="heading">Wind Degrees: {{ data.wind_degrees }} <br>
+	<p class="heading">Sunrise: {{ data.sunrise }} <br>
+	<p class="heading">Sunset: {{ data.sunset }} <br>
+    </p>
+    
+    <h3>Search by City Name <a href="{{ url_for('search_city') }}">here</a></h3>
+    <h3>Search by Zip Code <a href="{{ url_for('search_zip') }}">here</a></h3>
+{% endblock %}
